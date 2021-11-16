@@ -14,6 +14,7 @@ const Audits: React.FC = () => {
             <div className="my-4 mx-auto">
               <Image
                 src={Images.Badge}
+                alt="Audit"
                 width="128"
                 height="128"
                 layout="fixed"
@@ -28,6 +29,7 @@ const Audits: React.FC = () => {
             <div className="w-32 h-32 rounded-full border-3 border-gravityYellow flex items-center justify-center my-4 mx-auto">
               <Image
                 src={Images.OeliskAudit}
+                alt="Audit"
                 width="107"
                 height="108"
                 layout="fixed"
@@ -41,6 +43,7 @@ const Audits: React.FC = () => {
             <div className="w-32 h-32 rounded-full border-3 border-gravityYellow flex items-center justify-center my-4 mx-auto">
               <Image
                 src={Images.CTDSec}
+                alt="Audit"
                 width="120"
                 height="120"
                 layout="fixed"

@@ -16,14 +16,17 @@ const Header: React.FC = () => {
         <div className="container">
           <div className="relative lg:flex items-center justify-between">
             <div className="flex items-center">
-              <a href="/" className="block">
-                <Image
-                  src={Images.Logo}
-                  width="137"
-                  height="40"
-                  layout="fixed"
-                />
-              </a>
+              <Link href="/">
+                <a className="block">
+                  <Image
+                    src={Images.Logo}
+                    alt="Logo"
+                    width="137"
+                    height="40"
+                    layout="fixed"
+                  />
+                </a>
+              </Link>
               <div className="ml-auto flex items-center lg:hidden">
                 <button
                   type="button"
@@ -89,6 +92,7 @@ const Header: React.FC = () => {
                     <a className="border-2 border-gravityYellow px-4 py-2 text-white rounded-lg flex items-center justify-center space-x-2">
                       <Image
                         src="/images/gravity.png"
+                        alt="gravity"
                         width="18"
                         height="17"
                         layout="fixed"

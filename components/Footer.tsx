@@ -15,6 +15,7 @@ const Footer: React.FC = () => {
                 <a>
                   <Image
                     src={FooterLogo}
+                    alt="Logo"
                     width="300"
                     height="45"
                     layout="fixed"

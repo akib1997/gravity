@@ -25,6 +25,7 @@ const Home: NextPage = () => {
         <div className="absolute right-0 w-60 md:w-[513px] h-60 md:h-[513px] transform -top-24 z-0 sm:block hidden">
           <Image
             src={Images.LeftMiddle}
+            alt="Left Middle"
             width="513"
             height="513"
             layout="responsive"
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
         <div className="absolute left-0 w-80 md:w-[700px] h-96 md:h-[1000px] transform rotate-8 top-1/5 z-0 sm:block hidden">
           <Image
             src={Images.RightTop}
+            alt="Right Top"
             width="700"
             height="1000"
             layout="responsive"
@@ -54,6 +56,7 @@ const Home: NextPage = () => {
                 <span className="relative">
                   <Image
                     src={Images.Tringle}
+                    alt="Tringle"
                     width="29"
                     height="28"
                     layout="fixed"
@@ -62,6 +65,7 @@ const Home: NextPage = () => {
                   <span className="absolute w-7 h-48 sm:top-1.5 right-4">
                     <Image
                       src={Images.Line}
+                      alt="Line"
                       width="41"
                       height="208"
                       layout="fixed"
@@ -100,6 +104,7 @@ const Home: NextPage = () => {
                 <a className="border-2 border-gravityYellow px-4 py-2 text-white rounded-lg flex items-center justify-center space-x-2">
                   <Image
                     src="/images/gravity.png"
+                    alt="Gravity"
                     width="15"
                     height="15"
                     layout="fixed"

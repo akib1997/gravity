@@ -14,6 +14,7 @@ const Partners: React.FC = () => {
             <div className="w-32 h-32 rounded-full border-3 border-gravityYellow flex items-center justify-center my-4 mx-auto">
               <Image
                 src={Images.Adamant}
+                alt="Adamant"
                 width="92"
                 height="92"
                 layout="fixed"
@@ -25,7 +26,13 @@ const Partners: React.FC = () => {
           </li>
           <li className="mx-">
             <div className="w-32 h-32 rounded-full border-3 border-gravityYellow flex items-center justify-center my-4 mx-auto">
-              <Image src={Images.Crazy} width="92" height="92" layout="fixed" />
+              <Image
+                src={Images.Crazy}
+                alt="crazy"
+                width="92"
+                height="92"
+                layout="fixed"
+              />
             </div>
             <p className="text-lg font-medium text-gravityGrayLight">
               Crazy Crows Chess Club
@@ -33,7 +40,13 @@ const Partners: React.FC = () => {
           </li>
           <li className="mx-">
             <div className="w-32 h-32 rounded-full border-3 border-gravityYellow flex items-center justify-center my-4 mx-auto">
-              <Image src={Images.Matic} width="92" height="92" layout="fixed" />
+              <Image
+                src={Images.Matic}
+                alt="matic"
+                width="92"
+                height="92"
+                layout="fixed"
+              />
             </div>
             <p className="text-lg font-medium text-gravityGrayLight">
               Powered by <span className="font-bold text-white"> Polygon</span>

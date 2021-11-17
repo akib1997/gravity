@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       <TopBar />
       <Header />
       <main className="px-4 my-20 text-center relative xl:overflow-visible overflow-hidden">
-        <div className="absolute right-0 w-60 md:w-[513px] h-60 md:h-[513px] transform -top-24 z-0 sm:block hidden">
+        <div className="absolute right-0 w-60 md:w-[513px] h-60 md:h-[513px] transform -top-24 z-0 lg:block hidden">
           <Image
             src={Images.LeftMiddle}
             alt="Left Middle"
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             layout="responsive"
           />
         </div>
-        <div className="absolute left-0 w-80 md:w-[700px] h-96 md:h-[1000px] transform rotate-8 top-1/5 z-0 sm:block hidden">
+        <div className="absolute left-0 w-80 md:w-[700px] h-96 md:h-[1000px] transform rotate-8 top-80 z-0 lg:block hidden">
           <Image
             src={Images.RightTop}
             alt="Right Top"

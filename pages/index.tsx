@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <TopBar />
       <Header />
-      <main className="px-4 py-20 text-center relative xl:overflow-visible overflow-hidden">
+      <main className="px-4 my-20 text-center relative xl:overflow-visible overflow-hidden">
         <div className="absolute right-0 w-60 md:w-[513px] h-60 md:h-[513px] transform -top-24 z-0 sm:block hidden">
           <Image
             src={Images.LeftMiddle}
@@ -40,8 +40,8 @@ const Home: NextPage = () => {
             layout="responsive"
           />
         </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="md:flex items-center justify-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="items-center justify-center hidden">
             <Image
               src="/images/c-circle.png"
               alt="Gravity"
@@ -76,49 +76,55 @@ const Home: NextPage = () => {
               </p>
             </h1>
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold my-10">
-            DeFi backed by <span className="text-gravityYellow">bitcoin</span>
-          </h2>
-          <div className="flex items-center justify-center my-8">
-            <h4 className="text-xl sm:text-2xl font-light mr-1 tracking-[3px]  sm:tracking-[10px]">
-              Built on
-            </h4>
-            <Image
-              src="/images/polygon.png"
-              alt="Gravity"
-              width="150"
-              height="33"
-              layout="fixed"
-            />
-          </div>
-          <h5 className="font-medium text-lg sm:text-xl mb-12">
-            Trade, Earn Yield and join some of the most exciting projects coming
-            to Polygon through our Launchpad.
-          </h5>
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-5xl lg:pt-10 w-full mx-auto lg:grid grid-cols-2">
+            <div className="p-4">
+              <h2 className="text-2xl md:text-3xl font-bold mb-10">
+                DeFi backed by
+                <span className="text-gravityYellow">bitcoin</span>
+              </h2>
+              <h5 className="font-medium text-lg sm:text-xl mb-8">
+                Trade, Earn Yield and join some of the most exciting projects
+                coming to Polygon through our Launchpad.
+              </h5>
+              <div className="flex items-center justify-center my-8">
+                <h4 className="text-xl sm:text-2xl font-light mr-1 tracking-[3px]  sm:tracking-[10px]">
+                  Built on
+                </h4>
+                <Image
+                  src="/images/polygon.png"
+                  alt="Gravity"
+                  width="150"
+                  height="33"
+                  layout="fixed"
+                />
+              </div>
+            </div>
             <div className="rounded-2xl overflow-hidde">
               <Video />
             </div>
-            <div className="grid sm:grid-cols-2 gap-2 mt-12">
-              <Link href="/">
-                <a className="border-2 border-gravityYellow px-4 py-2 text-white rounded-lg flex items-center justify-center space-x-2">
-                  <Image
-                    src="/images/gravity.png"
-                    alt="Gravity"
-                    width="15"
-                    height="15"
-                    layout="fixed"
-                  />
-                  <span>Launch App</span>
-                </a>
-              </Link>
-              <Link href="/">
-                <a className="border-2 border-gravityYellow px-4 py-2 text-white rounded-lg">
-                  Read Docs
-                </a>
-              </Link>
-            </div>
           </div>
+
+          <div className="grid sm:hidden sm:grid-cols-2 gap-2 mt-12">
+            <Link href="/">
+              <a className="bg-gravityYellow text-black px-4 py-2 font-bold rounded-lg flex items-center justify-center space-x-2">
+                <Image
+                  src="/images/gravity.png"
+                  alt="Gravity"
+                  width="15"
+                  height="15"
+                  layout="fixed"
+                  className="filter brightness-0"
+                />
+                <span>Launch App</span>
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="px-4 font-bold py-2 text-gravityYellow rounded-lg">
+                Read Docs
+              </a>
+            </Link>
+          </div>
+
           <Statistics />
         </div>
         <div className="max-w-4xl mx-auto">

@@ -25,7 +25,7 @@ const Statistics: React.FC = () => {
         <h3 className="text-2xl sm:text-4xl font-bold mb-6 capitalize">
           Statistics
         </h3>
-        <div className="grid gap-2 sm:grid-cols-3">
+        <div className="grid gap-2 grid-cols-3">
           {StatisticsData.map((statistic) => (
             <StatisticsBox key={statistic.id} {...statistic} />
           ))}

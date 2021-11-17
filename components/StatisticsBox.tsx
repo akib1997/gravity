@@ -12,7 +12,7 @@ const StatisticsBox: React.FC<IProps> = ({ amount, name }: IProps) => {
       <div className="relative shadow-inner rounded-2xl">
         <span className="absolute -inset-1 bg-gravityYellow bg-opacity-10 blur-sm shadow-inner"></span>
 
-        <div className="relative bg-gravityDarkLight rounded-2xl border border-gravityYellow p-6">
+        <div className="relative bg-gravityDarkLight rounded-2xl border border-gravityYellow sm:p-6 p-2">
           <p className="text-2xl font-bold text-white">
             <span className="-mr-1">${amount}</span> {amount >= 1 ? "m" : ""}
           </p>

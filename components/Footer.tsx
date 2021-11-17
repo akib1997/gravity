@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
     <>
       <footer className="px-4 py-12 bg-[#10181E]">
         <div className="max-w-6xl w-full mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 ">
-            <div className="col-span-2">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 sm:gap-6 gap-12">
+            <div className="sm:col-span-2">
               <Link href="/">
                 <a>
                   <Image

@@ -21,19 +21,21 @@ const Header: React.FC = () => {
               >
                 <li className="">
                   <Link href="/">
-                    <a className="text-white transition-all block">Read docs</a>
+                    <a className="text-white transition-all block font-bold">
+                      Read docs
+                    </a>
                   </Link>
                 </li>
                 <li className="">
                   <Link href="/">
-                    <a className="text-white transition-all block">
+                    <a className="text-white transition-all block font-bold">
                       Audit Report
                     </a>
                   </Link>
                 </li>
                 <li className="absolute right-0">
                   <Link href="/">
-                    <a className="border-2 border-gravityYellow px-4 py-2 text-white rounded-lg flex items-center justify-center space-x-2">
+                    <a className="border-2 border-gravityYellow px-4 py-2 font-bold text-white rounded-lg flex items-center justify-center space-x-2">
                       <Image
                         src="/images/gravity.png"
                         alt="gravity"
